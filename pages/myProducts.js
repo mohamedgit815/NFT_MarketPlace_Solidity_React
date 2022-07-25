@@ -2,6 +2,7 @@ import {useState , useEffect} from "react";
 import detectEthereumProvider from '@metamask/detect-provider';
 import ContractCommerce from "../public/abi/NFTMarketPlace.json";
 import Web3 from "web3";
+import Image from "next/image";
 
 
 export default function MyProducts() {
@@ -184,7 +185,7 @@ const _reqAccoubtsFunc = async () => {
                     <div key={key.id} className="mb-6">
                   <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
                   <a href="#">
-                      <img className="rounded-t-lg" src={_data} alt=""/>
+                      <Image className="rounded-t-lg" src={_data} alt=""/>
                   </a>
                   <div className="p-5">
                       <a href="#">

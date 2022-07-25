@@ -181,7 +181,7 @@ export default function CreateNFT() {
 
             <div className="text-center mb-6">
               {
-              !web3.provider ? <a className="text-green-700" href="https://metamask.io/download/" target="_blank">Install Wallet</a> 
+              !web3.provider ? <a className="text-green-700" href="https://metamask.io/download/" target="_blank" rel="noreferrer">Install Wallet</a> 
                     : 
               <button onClick={!web3.account ? _reqAccoubtsFunc : _uploadData } 
               className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">

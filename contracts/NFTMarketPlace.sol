@@ -140,7 +140,7 @@ contract NFTMarketPlace {
 
 
     // to Show Data in Home
-    function setLockedTrue(uint256 id_) external {
+    function setLockedTrue( uint256 id_ ) external {
         require( _mapUploading[id_].buyer == msg.sender,"You are not Owner");
         require(_mapUploading[id_].locked != true,"Your Value is True");
 
@@ -150,9 +150,9 @@ contract NFTMarketPlace {
 
 
     // to Hide Data in Home
-    function setLockedFalse(uint256 id_) external {
-        require( _mapUploading[id_].buyer == msg.sender,"You are not Owner");
-        require(_mapUploading[id_].locked == true,"Your Value is False");
+    function setLockedFalse( uint256 id_ ) external {
+        require( _mapUploading[id_].buyer == msg.sender , "You are not Owner" );
+        require( _mapUploading[id_].locked == true , "Your Value is False" );
 
         _mapUploading[id_].locked = false;
 
