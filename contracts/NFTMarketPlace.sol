@@ -80,7 +80,7 @@ contract NFTMarketPlace {
         
         require( __sender != address(0) , "check your Address" );
         require( !_mapCheckImage[image_] , "This Image Already Exists" );
-        require( price_ > 0 , "No Money" );
+        require( price_ > 1000 , "No Money" );
 
 
         _itemsId.increment();
